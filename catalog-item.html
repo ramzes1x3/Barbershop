@@ -9,22 +9,24 @@
 	<meta name="author" content="IGOR">
 	<meta name="keywords" content="items">
 	<meta name="description" content="items">
-	<link rel="stylesheet" href="css/catalog-item.css">
 	<meta name="viewport" content="width=device-width,initial-scale=1">
+	<link rel="stylesheet" href="css/normalize.css">
+	<link href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700&amp;subset=cyrillic" rel="stylesheet">
+	<link rel="stylesheet" href="css/index.css">
 
 </head>
 
-<body>
+<body class="catalog-page">
 
 	<header class="main-header">
 
-		<a class="main-header-logo" href="index.html">
-			<img src="img/logo.svg" width="111" height="24" alt="Логотип барбершоп">
-		</a>
-
 		<nav class="main-navigation">
 
-			<ul class="list-navigation">
+				<a class="main-header-logo" href="index.html">
+						<img src="img/logo.svg" width="111" height="24" alt="Логотип барбершоп">
+					</a>
+
+			<ul class="site-navigation">
 				<li><a href="info.html">Информация</a></li>
 				<li><a href="news.html">Новости</a></li>
 				<li><a href="price.html">Прайс-лист</a></li>
@@ -44,7 +46,7 @@
 	</header>
 
 
-	<main class="container">
+	<main class="container-catalog">
 
 		<h1 class="page-title">Средства для ухода</h1>
 
@@ -61,86 +63,85 @@
 
 			<form action="https://echo.htmlacademy.ru" method="get" class="filter">
 
+				<h2 class="title-form1">ПРОИЗВОДИТЕЛИ:</h2>
 				<fieldset>
-					<legend>ПРОИЗВОДИТЕЛИ:</legend>
 					<ul>
 
-						<li class="filter-option">
-							<label for="filter-Baxter-of-California">
-								Baxter of California
-							</label>
+							<li class="filter-option">
 							<input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="Baxter-of-California" id="filter-Baxter-of-California"
 							 checked>
+								<label for="filter-Baxter-of-California">
+									Baxter of California
+								</label>
 						</li>
 
 						<li class="filter-option">
+							<input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="Mr-Natty" id="filter-Mr-Natty" disabled>
 							<label for="filter-Mr-Natty">
 								Mr Natty
-							</label>
-							<input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="Mr-Natty" id="filter-Mr-Natty">
+						</label>
 						</li>
 
 						<li class="filter-option">
-							<label for="filter-Suavecito">
-								Suavecito
-							</label>
 							<input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="Suavecito" id="filter-Suavecito"
 							 checked>
+								<label for="filter-Suavecito">
+									Suavecito
+								</label>
 						</li>
 
 						<li class="filter-option">
+							<input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="Malin-Goetz" id="filter-Malin-Goetz">
 							<label for="filter-Malin-Goetz">
 								Malin+Goetz
 							</label>
-							<input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="Malin-Goetz" id="filter-Malin-Goetz">
 						</li>
 
 						<li class="filter-option">
-							<label for="filter-Murrays">
-								Murray’s
-							</label>
 							<input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="Murrays" id="filter-Murrays">
+							<label for="filter-Murrays">
+									Murray’s
+								</label>
 						</li>
 
 						<li class="filter-option">
-							<label for="filter-American-Crew">
-								American Crew
-							</label>
 							<input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="American-Crew" id="filter-American-Crew"
 							 checked>
+							 <label for="filter-American-Crew">
+									American Crew
+								</label>
 						</li>
 
 					</ul>
 				</fieldset>
 
-
+				<h2 class="title-form2">ГРУППЫ ТОВАРОВ:</h2>
 				<fieldset>
-					<legend>ГРУППЫ ТОВАРОВ:</legend>
 					<ul>
 
 						<li class="filter-option">
-							<label for="filter-shaving">
-								Бритвенные
-								принадлежности
-							</label>
 							<input class="visually-hidden filter-input filter-input-type-radio" type="radio" name="product-group" id="filter-shaving"
 							 value="shaving">
+							 <label for="filter-shaving">
+									Бритвенные
+									принадлежности
+								</label>
 						</li>
 
 						<li class="filter-option">
-							<label for="filter-hair-care">
-								Средства для ухода
-							</label>
 							<input class="visually-hidden filter-input filter-input-type-radio" type="radio" name="product-group" id="filter-hair-care"
 							 value="hair-care" checked>
+							 <label for="filter-hair-care">
+									Средства для ухода
+								</label>
 						</li>
 
 						<li class="filter-option">
-							<label for="filter-accessories">
-								Аксессуары
-							</label>
 							<input class="visually-hidden filter-input filter-input-type-radio" type="radio" name="product-group" id="filter-accessories"
-							 value="accessories">
+							 value="accessories" disabled>
+							 <label for="filter-accessories">
+									Аксессуары
+								</label>
 						</li>
 
 					</ul>
@@ -258,10 +259,10 @@
 			</ul>
 
 			<ul class="pagination-list">
-				<li class="pagination-item"><a href="pagi.html">1</a></li>
-				<li class="pagination-item pagination-item-current"><a>2</a></li>
-				<li class="pagination-item"><a href="pagi.html">3</a></li>
-				<li class="pagination-item"><a href="pagi.html">4</a></li>
+				<li class="pagination-item"><a class="button" href="pagi.html">1</a></li>
+				<li class="pagination-item pagination-item-current"><a class="button">2</a></li>
+				<li class="pagination-item"><a class="button" href="pagi.html">3</a></li>
+				<li class="pagination-item"><a class="button" href="pagi.html">4</a></li>
 			</ul>
 
 		</section>
@@ -285,9 +286,9 @@
 			<b>Давайте дружить!</b>
 
 			<ul class="social-list">
-				<li><a class="social-button" href="social.html" aria-label="vkontakte"></a></li>
-				<li><a class="social-button" href="social.html" aria-label="facebook"></a></li>
-				<li><a class="social-button" href="social.html" aria-label="instagram"></a></li>
+				<li><a class="social-button" href="social.html" aria-label="vkontakte">v</a></li>
+				<li><a class="social-button" href="social.html" aria-label="facebook">f</a></li>
+				<li><a class="social-button" href="social.html" aria-label="instagram">i</a></li>
 			</ul>
 
 		</div>
@@ -296,7 +297,7 @@
 
 			<b>Разработано:</b>
 
-			<a class="button" href="https://htmlacademy.ru">HTML Academy</a>
+			<a class="social-button" href="https://htmlacademy.ru">HTML Academy</a>
 
 		</p>
 

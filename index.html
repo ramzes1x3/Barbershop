@@ -20,11 +20,10 @@
 
 	<header class="main-header">
 
-		<a class="main-header-logo" href="index.html">
-			<img src="/img/index/index-logo.svg" width="371" height="155" alt="Логотип барбершопа «Бородинский»">
-		</a>
-
 		<nav class="main-navigation">
+
+
+						<img src="/img/index/index-logo.svg" width="371" height="155" alt="Логотип барбершопа «Бородинский»">
 
 			<ul class="site-navigation">
 				<li><a href="info.html">Информация</a></li>
@@ -83,12 +82,13 @@
 
 
 
+<div class="index-columns">
 
 		<section class="news">
 
 			<h2>Новости</h2>
 
-			<ul class="news">
+			<ul class="news-list">
 
 				<li class="item-news">
 					<p>Нам наконец завезли Ягермайстер! Теперь вы можете пропустить стаканчик во время стрижки</p>
@@ -123,9 +123,10 @@
 
 		</section>
 
+</div>
 
 
-
+<div class="index-columns">
 		<section class="contacts">
 
 			<h2>Контактная информация</h2>
@@ -156,28 +157,28 @@
 
 			<form action="https://echo.htmlacademy.ru" class="appointment-form" method="POST">
 
-				<p class="appointmet-item">
+				<p class="appointment-item">
 					<label for="appointment-date">
 						Дата
 					</label>
 					<input type="text" name="date" value="" id="appointment-date" placeholder="08.10.2017">
 				</p>
 
-				<p class="appointmet-item">
+				<p class="appointment-item">
 					<label for="appointment-time">
 						Время
 					</label>
 					<input type="text" name="time" value="" id="appointment-time" placeholder="10:00">
 				</p>
 
-				<p class="appointmet-item">
+				<p class="appointment-item">
 					<label for="appointment-name">
 						Ваше имя
 					</label>
 					<input type="text" name="name" value="" id="appointment-name" placeholder="Goga">
 				</p>
 
-				<p class="appointmet-item">
+				<p class="appointment-item">
 					<label for="appointment-phone">
 						Ваш номер телефона
 					</label>
@@ -189,6 +190,7 @@
 			</form>
 
 		</section>
+</div>
 
 
 	</main>
@@ -210,9 +212,9 @@
 			<b>Давайте дружить!</b>
 
 			<ul class="social-list">
-				<li><a class="social-button" href="social.html" aria-label="vkontakte"></a></li>
-				<li><a class="social-button" href="social.html" aria-label="facebook"></a></li>
-				<li><a class="social-button" href="social.html" aria-label="instagram"></a></li>
+				<li><a class="social-button" href="social.html" aria-label="vkontakte">v</a></li>
+				<li><a class="social-button" href="social.html" aria-label="facebook">f</a></li>
+				<li><a class="social-button" href="social.html" aria-label="instagram">i</a></li>
 			</ul>
 
 		</div>
@@ -221,7 +223,7 @@
 
 			<b>Разработано:</b>
 
-			<a href="https://htmlacademy.ru" class="button">HTML Academy</a>
+			<a href="https://htmlacademy.ru" class="social-button">HTML Academy</a>
 
 		</p>
 
