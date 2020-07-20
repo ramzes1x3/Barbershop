@@ -1,0 +1,363 @@
+/* index.html */
+body {
+	margin: 0;
+	padding: 0;
+
+	font-family: "PT-sans Narrow", Arial , sans-serif;
+	font-size: 14px;
+	font-weight: 700;
+	line-height: 24px;
+	color:#ffffff;
+	text-transform: uppercase;
+
+	background-color: #000000;
+	background-image: url(/img/index/background-index.jpg);
+	background-position: top center;
+	background-repeat: no-repeat;
+}
+
+button {
+	border: none;
+	cursor: pointer;
+}
+
+a {
+	text-decoration: none;
+	color: #000000;
+}
+
+.main-navigation {
+	font-size: 16px;
+	line-height: 20px;
+	color: #ffffff;
+
+	background-color: #000000;
+}
+
+.site-navigation,
+.user-navigation,
+.features-list,
+.news-list,
+.footer-social ul {
+	list-style: none;
+}
+
+.site-navigation a,
+.user-navigation a {
+	color: #ffffff;
+}
+
+.site-navigation a:hover,
+.site-navigation a:focus,
+.user-navigation a:hover,
+.user-navigation a:focus {
+	background-color: #242424;
+}
+
+.feature-item {
+	text-align: center;
+}
+
+.feature-item h3 {
+	font-size: 30px;
+	line-height: 42px;
+}
+
+.index-columns {
+color: #000000;
+
+background-color: #f8f5f2;
+background-image: url(/img/zalivka.jpg);
+background-position: 0 0;
+background-repeat: repeat; 
+}
+
+.index-columns h2 {
+	font-size: 30px;
+	line-height: 42px;
+}
+
+.item-news time {
+	text-transform: none;
+}
+
+.content-gallery{
+	background-color: #cccccc;
+
+	border: 7px solid #ffffff;
+}
+
+.button {
+	font: inherit;
+
+	text-align: center;
+	vertical-align: middle;
+	color: #ffffff;
+	text-transform: uppercase;
+
+	background-color: #000000;
+	border: none;
+}
+
+.button:hover,
+.button:focus,
+.button:active {
+	background-color: #663d15;
+}
+
+.appointment-item input {
+	font: inherit;
+
+	background-color: transparent;
+	border: 2px solid #000000;
+}
+
+.appointment-item input:focus{
+	border-color: #663d15;
+}
+
+.main-footer {
+  color: #ffffff;
+
+  background-color: #212121;
+  background-image: url(/img/index/fon-footer.jpg);
+  background-position: 0 0;
+  background-repeat: repeat;
+}
+
+.footer-contacts a {
+  color: #ffffff;
+  text-decoration: underline;
+}
+
+.footer-contacts a:hover,
+.footer-contacts a:focus {
+  text-decoration: none;
+}
+
+.footer-social {
+  text-align: center;
+}
+
+.footer-social ul {
+  list-style: none;
+}
+
+.social-button {
+	background-color: black;
+  color: #ffffff;
+}
+
+.footer-copyright {
+  text-align: center;
+}
+
+.social-button:hover,
+.social-button:focus {
+  color: #000000;
+
+  background-color: #ffffff;
+}
+
+.modal {
+  color: #000000;
+
+  background-color: #f8f3f0;
+  background-image: url("../img/pattern-light.jpg");
+  background-position: 0 0;
+  background-repeat: repeat;
+}
+
+.modal h2 {
+  font-size: 30px;
+  line-height: 42px;
+}
+
+.login-form input[type="text"],
+.login-form input[type="password"] {
+  font: inherit;
+  color: #000000;
+  text-transform: uppercase;
+
+  background-color: #f9f6f3;
+	border: 2px solid #000000;
+	
+	outline: none;
+}
+
+.login-form input:focus {
+  border-color: #663d15;
+}
+
+.login-checkbox:hover,
+.login-checkbox:focus {
+  color: #663d15;
+}
+
+.restore {
+  color: #000000;
+  text-decoration: underline;
+}
+
+.restore:hover,
+.restore:focus {
+  text-decoration: none;
+}
+/* index.html */
+
+
+
+/* catalog-item.html */
+.catalog-page {
+	color: #000000;
+	background-color: #f2f2f2;
+	background-image: url(/img/zalivka.jpg);
+	background-position: 0 0;
+	background-repeat: repeat;
+}
+
+
+.breadcrumbs,
+.filters ul,
+.catalog-list,
+.pagination-list {
+	list-style: none;
+}
+
+.breadcrumbs li a{
+	font-size: 14px;
+	line-height: 20px;
+}
+
+.breadcrumbs-current {
+	color: #aba9a7;
+}
+
+.container-catalog {
+	font-size: 14px;
+	line-height: 18px;
+
+	text-transform: uppercase;
+}
+
+.container-catalog h1 {
+		font-size: 30px;
+		line-height: 42px;
+}
+
+
+.filters h2 {
+	font-size: 24px;
+	line-height: 30px;
+}
+
+.filter-option label:hover {
+	color: #663d15;
+	cursor: pointer;
+}
+
+
+.filter-option input:disabled ~ label{
+	color: #aba9a7;
+}
+
+.filter-option input:disabled ~ label:hover {
+	color: #aba9a7;
+}
+
+.catalog-item-price {
+	background-color: #e5e5e5;
+}
+
+.pagination-item-current a{
+	background-color: white;
+	color: black;
+}
+
+.pagination-item-current a:hover {
+	background-color: white;
+	color: black;
+}
+
+
+.catalog-item .catalog-category {
+	text-transform: none;
+}
+/* catalog-item.html */
+
+
+
+/* item.html */
+.item-page {
+	color: #000000;
+	background-color: #f2f2f2;
+	background-image: url(/img/zalivka.jpg);
+	background-position: 0 0;
+	background-repeat: repeat;
+}
+
+.product-photo-preview,
+.set-list {
+	list-style: none;
+}
+
+.container-item-page {
+	font-size: 14px;
+	line-height: 24px;
+}
+
+.container-item-page h1 {
+	font-size: 30px;
+	line-height: 42px;
+}
+
+.product-info h3 {
+	font-size: 24px;
+	line-height: 30px;	
+}
+
+.product-article {
+	color: #aeaeae;
+}
+
+.product-price {
+	background-color: #e5e5e5;
+}
+/* item.html */
+
+
+/* price.html */
+.price-page {
+	color: #000000;
+	background-color: #f2f2f2;
+	background-image: url(/img/zalivka.jpg);
+	background-position: 0 0;
+	background-repeat: repeat;
+}
+
+.container-price {
+	font-size: 14px;
+	line-height: 24px;
+}
+
+.container-price h1 {
+	font-size: 30px;
+	line-height: 42px;
+}
+
+.container-price h2 {
+	font-size: 24px;
+	line-height: 30px;
+}
+
+.container-price .lozung {
+	font-size: 48px;
+	line-height: 48px;
+	text-align: center;
+}
+
+.facilities-list {
+	list-style: none;
+}
+
+/* price.html */
